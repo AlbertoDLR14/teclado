@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #252831;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#app{
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input{
+    width: 100%;
+    height: 80px;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 1.6em;
+    border: none;
+}
+.layer{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.key{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2em;
+    transition: box-shadow 0.8s ease;
+    cursor: pointer;
+}
+
+.key:hover{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.key-mayus, .key-shift, .key-tab{
+    width: auto;
+    padding: 0 6px;
+}
+
+.layer:last-of-type{
+    display: flex;
+    justify-content: center;
+}
+.key-space{
+    width: 400px;
+}

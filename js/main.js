@@ -15,6 +15,7 @@ const keys = [
         ["¡", "¿"],
     ],
     [
+        ["TAB", "TAB"],
         ["q", "Q"],
         ["w", "W"],
         ["e", "E"],
@@ -81,6 +82,9 @@ function renderKeyboard(){
             if(key[0] === 'MAYUS'){
                 return `<button class="key key-mayus">${key[0]}</button>`;
             }
+            if(key[0] === 'TAB'){
+                return `<button class="key key-tab">${key[0]}</button>`;
+            }
             if(key[0] === 'SPACE'){
                 return `<button class="key key-space"></button>`;
             }
@@ -122,6 +126,8 @@ function renderKeyboard(){
                     mayus = !mayus;
                 }else if(key.textContent == ''){
                     current.value += " ";
+                }else if(key.textContent == 'TAB'){
+                    current.value += "  ";
                 }else{
                     current.value += key.textContent.trim();
                     if(shift){
